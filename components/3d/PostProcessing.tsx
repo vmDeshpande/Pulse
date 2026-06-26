@@ -12,11 +12,11 @@ export function PostProcessing() {
     <EffectComposer multisampling={4}>
       {/* Bloom effect optimized for 60 FPS performance */}
       <Bloom
-        luminanceThreshold={0.3}
-        luminanceSmoothing={0.9}
-        height={256}
+        luminanceThreshold={0.75}
+        luminanceSmoothing={0.15}
+        height={512}
         intensity={bloomStrength * 1.0}
-        radius={0.7}
+        radius={0.45}
         scale={0.8}
       />
     </EffectComposer>
