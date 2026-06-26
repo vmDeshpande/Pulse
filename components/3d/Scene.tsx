@@ -6,9 +6,6 @@ import * as THREE from "three";
 
 import { useSceneStore } from "@/store/useSceneStore";
 
-import { Earth } from "./Earth";
-import { Atmosphere } from "./Atmosphere";
-import { Clouds } from "./Clouds";
 import { Stars } from "./Stars";
 import { Lighting } from "./Lighting";
 import { PostProcessing } from "./PostProcessing";
@@ -20,15 +17,12 @@ import { ISSLayer } from "./layers/ISSLayer";
 
 import { RaycastInteraction } from "./RaycastInteraction";
 
+import { Planet } from "./Planet";
+
 export function Scene() {
   const { scene, gl } = useThree();
 
-  const {
-    time,
-    isPaused,
-    setTime,
-    exposure,
-  } = useSceneStore();
+  const { time, isPaused, setTime, exposure } = useSceneStore();
 
   useEffect(() => {
     scene.background = new THREE.Color(0x000000);
@@ -56,9 +50,7 @@ export function Scene() {
       <Lighting />
 
       {/* Planet */}
-      <Earth />
-      <Atmosphere />
-      <Clouds />
+      <Planet />
 
       {/* Background */}
       <Stars />
