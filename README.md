@@ -4,7 +4,7 @@
 >
 > Explore the planet in real time through an immersive 3D globe that visualizes flights, earthquakes, wildfires, satellites, the International Space Station, weather events, and much more.
 
-![Pulse Banner](./public/banner.png)
+![Pulse Banner](./public/Pulse.png)
 
 > **⚠️ Project Status:** Early Development (Frontend Foundation)
 
